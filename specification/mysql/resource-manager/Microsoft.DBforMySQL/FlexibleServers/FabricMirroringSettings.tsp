@@ -3,12 +3,15 @@ import "@typespec/rest";
 import "@typespec/versioning";
 import "@azure-tools/typespec-azure-core";
 import "@azure-tools/typespec-azure-resource-manager";
+import "@azure-tools/typespec-autorest";
+import "./Server.tsp";
 
 using TypeSpec.Http;
 using TypeSpec.Rest;
 using TypeSpec.Versioning;
 using Azure.Core;
 using Azure.ResourceManager;
+using Autorest;
 
 @versioned(Versions)
 namespace Microsoft.DBforMySQL;
@@ -79,13 +82,16 @@ model FabricMirroringSettings is ProxyResource<FabricMirroringSettingsProperties
 interface FabricMirroringSettingsOperations {
   @doc("Get Fabric Mirroring settings.")
   @added(Versions.v2025_12_01_preview)
+  @Autorest.example("../examples/FabricMirroringSettings_Get.json", "Get Fabric Mirroring settings example")
   get is ArmResourceRead<FabricMirroringSettings>;
 
   @doc("Create or update Fabric Mirroring settings.")
   @added(Versions.v2025_12_01_preview)	
+  @Autorest.example("../examples/FabricMirroringSettings_Put.json", "Create or update Fabric Mirroring settings example")
   createOrUpdate is ArmResourceCreateOrUpdateAsync<FabricMirroringSettings>;
 
   @doc("List Fabric Mirroring settings by server.")
   @added(Versions.v2025_12_01_preview)
+  @Autorest.example("../examples/FabricMirroringSettings_ListByServer.json", "List Fabric Mirroring settings by server example")
   listByServer is ArmResourceListByParent<FabricMirroringSettings>;
 }

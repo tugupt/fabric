@@ -2834,6 +2834,11 @@
             }
           }
         },
+        "x-ms-examples": {
+          "List Fabric Mirroring settings by server example": {
+            "$ref": "../examples/FabricMirroringSettings_ListByServer.json"
+          }
+        },
         "x-ms-pageable": {
           "nextLinkName": "nextLink"
         }
@@ -2887,6 +2892,11 @@
             "schema": {
               "$ref": "../../../../../../common-types/resource-management/v5/types.json#/definitions/ErrorResponse"
             }
+          }
+        },
+        "x-ms-examples": {
+          "Get Fabric Mirroring settings example": {
+            "$ref": "../examples/FabricMirroringSettings_Get.json"
           }
         }
       },
@@ -2963,6 +2973,11 @@
             "schema": {
               "$ref": "../../../../../../common-types/resource-management/v5/types.json#/definitions/ErrorResponse"
             }
+          }
+        },
+        "x-ms-examples": {
+          "Create or update Fabric Mirroring settings example": {
+            "$ref": "../examples/FabricMirroringSettings_Put.json"
           }
         },
         "x-ms-long-running-operation-options": {
