@@ -38,6 +38,6 @@
       }
     }
   },
-  "operationId": "FabricMirroringSettings_Put",
-  "title": "Put a server's Fabric Mirroring settings."
+  "operationId": "FabricMirroringSettings_CreateOrUpdate",
+  "title": "Create Or Update a server's Fabric Mirroring settings."
 }

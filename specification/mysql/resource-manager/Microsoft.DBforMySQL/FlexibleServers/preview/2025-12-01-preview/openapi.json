@@ -2794,7 +2794,7 @@
     },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DBforMySQL/flexibleServers/{serverName}/fabricMirroringSettings": {
       "get": {
-        "operationId": "FabricMirroringSettingsOperations_ListByServer",
+        "operationId": "FabricMirroringSettings_ListByServer",
         "tags": [
           "FabricMirroringSettingsOperations"
         ],
@@ -2835,8 +2835,8 @@
           }
         },
         "x-ms-examples": {
-          "List Fabric Mirroring settings by server example": {
-            "$ref": "../examples/FabricMirroringSettings_ListByServer.json"
+          "List a server's Fabric Mirroring settings.": {
+            "$ref": "./examples/FabricMirroringSettingsList.json"
           }
         },
         "x-ms-pageable": {
@@ -2846,7 +2846,7 @@
     },
     "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DBforMySQL/flexibleServers/{serverName}/fabricMirroringSettings/{fabricMirroringSettingsName}": {
       "get": {
-        "operationId": "FabricMirroringSettingsOperations_Get",
+        "operationId": "FabricMirroringSettings_Get",
         "tags": [
           "FabricMirroringSettingsOperations"
         ],
@@ -2895,13 +2895,13 @@
           }
         },
         "x-ms-examples": {
-          "Get Fabric Mirroring settings example": {
-            "$ref": "../examples/FabricMirroringSettings_Get.json"
+          "Get a server's Fabric Mirroring settings.": {
+            "$ref": "./examples/FabricMirroringSettingsGet.json"
           }
         }
       },
       "put": {
-        "operationId": "FabricMirroringSettingsOperations_CreateOrUpdate",
+        "operationId": "FabricMirroringSettings_CreateOrUpdate",
         "tags": [
           "FabricMirroringSettingsOperations"
         ],
@@ -2976,8 +2976,8 @@
           }
         },
         "x-ms-examples": {
-          "Create or update Fabric Mirroring settings example": {
-            "$ref": "../examples/FabricMirroringSettings_Put.json"
+          "Create Or Update a server's Fabric Mirroring settings.": {
+            "$ref": "./examples/FabricMirroringSettingsPut.json"
           }
         },
         "x-ms-long-running-operation-options": {
