@@ -13,6 +13,7 @@ options:
 
     arm-types-dir: "{project-root}/../../../../common-types/resource-management"
     emit-lro-options: "all"
+    use-read-only-status-schema: true
   "@azure-tools/typespec-csharp":
     flavor: azure
     package-name: "Azure.ResourceManager.MySql"
