@@ -5410,8 +5410,7 @@
             "value": "Failed",
             "description": "Provisioning has failed."
           }
-        ],
-        "readOnly" :  true
+        ]
       }
     },
     "FabricMirroringSettings": {
