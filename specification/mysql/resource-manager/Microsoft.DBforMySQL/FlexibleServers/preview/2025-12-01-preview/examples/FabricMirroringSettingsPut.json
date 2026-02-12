@@ -3,7 +3,7 @@
     "subscriptionId": "00000000-1111-2222-3333-444444444444",
     "resourceGroupName": "fabricmirroring-rg",
     "serverName": "fabricmirroring-server",
-    "fabricMirroringSettingsName": "fabricMirroringSettings",
+    "fabricMirroringSettingsName": "Default",
     "api-version": "2025-12-01-preview",
     "parameters": {
       "properties": {

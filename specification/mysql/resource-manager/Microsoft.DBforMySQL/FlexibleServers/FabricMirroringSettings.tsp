@@ -73,7 +73,12 @@ model FabricMirroringSettingsProperties {
  */
 @parentResource(Server)
 model FabricMirroringSettings is ProxyResource<FabricMirroringSettingsProperties> {
-  ...ResourceNameParameter<FabricMirroringSettings>;
+  ...ResourceNameParameter<
+   Resource = FabricMirroringSettings,
+    KeyName = "fabricMirroringSettingsName",
+    SegmentName = "fabricMirroringSettings",
+    NamePattern = "^[a-zA-Z0-9-]{3,24}$"
+    >;
 }
 
 #suppress "@azure-tools/typespec-azure-resource-manager/no-resource-delete-operation" "FIXME: Update justification, follow aka.ms/tsp/conversion-fix for details"
