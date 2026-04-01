@@ -36,6 +36,12 @@
           "provisioningState": "Succeeded"
         }
       }
+    },
+    "202": {
+      "headers": {
+        "Azure-AsyncOperation": "https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DBforMySQL/locations/eastus/azureAsyncOperation/00000000-0000-0000-0000-000000000000?api-version=2025-12-01-preview",
+        "Location": "https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.DBforMySQL/locations/eastus/operationStatus/00000000-0000-0000-0000-000000000000?api-version=2025-12-01-preview"
+      }
     }
   },
   "operationId": "FabricMirroringSettings_CreateOrUpdate",
